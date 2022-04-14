@@ -9,4 +9,6 @@ this is a basic configuration of my i3 desk
 - font awesome
 - terminal awesome font 
 - bumblebee-status (_para la bar_)
-
+- picom (_transparences_)
+- xfce4-screenshooter
+- rofi (_a replace for dmenu_)
