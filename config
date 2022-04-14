@@ -168,16 +168,20 @@ set $urgent-bg-color     #E53935
 set $blue-color          #5DA8F4
 
 # Window colors
-client.focused          $bg-color          $bg-color          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $blue-color        $blue-color        $text-color          #00ff00
+client.focused          $bg-color          $bg-color          $text-color          #008800
+client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #008800
+client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #008800
+client.urgent           $blue-color        $blue-color        $text-color          #008800
 
 bar {
 	position top
 	# Bar program
 #        status_command i3blocks -c ~/.i3/i3blocks.conf
-        status_command i3status
+#        status_command i3status
+	status_command  /home/axel/.local/bin/bumblebee-status \
+			-m cpu memory battery time pasink pasource \
+			-p time.format="%B %d of %Y | %H:%M" \
+			-t onedark-powerline 
 	# Bar colors
         colors {
 		background $bg-color
