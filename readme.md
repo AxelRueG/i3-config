@@ -12,3 +12,8 @@ this is a basic configuration of my i3 desk
 - picom (_transparences_)
 - xfce4-screenshooter
 - rofi (_a replace for dmenu_)
+- xorg-xinput (para el tap to click)
+
+### for vim
+
+- xclip (para poder manejar el porta papeles)
