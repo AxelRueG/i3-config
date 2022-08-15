@@ -276,4 +276,3 @@ let g:pymode_python = 'python3'
 
 para instalar los plugins basta con usar `:PlugInstall` o `:PlugUpdate` desde la linea de comando de vim.
 
-> muchas gracias a nicolas schurmann por servir de base para esta configuracion sencilla
