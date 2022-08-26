@@ -4,7 +4,9 @@
 
 Esta configuracion esta basada en **manjaro**, que es derivada de **arch**. Para manejar los repositorios **AUR** uso **yay**. para nuestra terminal usamo **zsh**
 
-### yay (configuracio)
+### yay (configuracion)
+
+problemente `makepkg -si` tire algun error, instalar antes _base_devel_
 
 instalacion:
 
