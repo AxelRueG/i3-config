@@ -22,6 +22,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id caffeine
+#exec --no-startup-id xrandr --dpi 110
+exec --no-startup-id xrandr --output eDP-1 --scale 0.76x0.76
 
 # Use pactl to adjust volume in PulseAudio. ----------------------------------------------------------------------
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -39,7 +41,7 @@ floating_modifier $mod
 
 # ----------------------------------------------------------------------------------------------------------------
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+w kill
@@ -94,7 +96,7 @@ set $ws10 "10"
 # Forcing apps on workspaces
 assign [class="Terminator"] $ws1
 # Web apps
-assign [class="Firefox"] $ws2
+assign [class="firefox"] $ws2
 assign [class="Google-chrome"] $ws2
 # Coding apps
 assign [class="Atom"] $ws3
@@ -177,7 +179,7 @@ bar {
 	# Bar program
 #        status_command i3blocks -c ~/.i3/i3blocks.conf
 #        status_command i3status
-	status_command /home/axel/.local/bin/bumblebee-status \
+	status_command /home/axelrue/.local/bin/bumblebee-status \
 			-m brightness disk memory battery time pasink pasource \
 			-p time.format="%B %d of %Y | %H:%M" memory.format='{percent:05.02f}%' disk.format='free {left} of {size}'\
 			-t onedark-powerline
@@ -199,7 +201,7 @@ bindsym $mod+space exec rofi -show drun -show-icons
 exec --no-startup-id feh --bg-fill $HOME/Pictures/walls/wall22.jpg
 
 # TAP TO CLICK
-exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+exec --no-startup-id xinput set-prop "SYNA7DB5:00 06CB:7DB7 Touchpad" "libinput Tapping Enabled" 1
 
 # SCREENSHOOTER
 bindsym Print exec --no-startup-id xfce4-screenshooter -r
