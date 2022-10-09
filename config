@@ -180,7 +180,7 @@ bar {
 #        status_command i3blocks -c ~/.i3/i3blocks.conf
 #        status_command i3status
 	status_command /home/axelrue/.local/bin/bumblebee-status \
-			-m brightness disk memory battery time pasink pasource \
+			-m layout brightness disk memory battery time pasink pasource \
 			-p time.format="%B %d of %Y | %H:%M" memory.format='{percent:05.02f}%' disk.format='free {left} of {size}'\
 			-t onedark-powerline
 	# Bar colors
