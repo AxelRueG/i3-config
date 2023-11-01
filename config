@@ -104,6 +104,7 @@ assign [class="Code"] $ws3
 assign [class="Gedit"] $ws3
 # File apps
 assign [class="Thunar"] $ws4
+assign [class="Dolphin"] $ws4
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -198,13 +199,14 @@ bar {
 bindsym $mod+space exec rofi -show drun -show-icons
 
 # WALLPAPER
-exec --no-startup-id feh --bg-fill $HOME/Pictures/walls/wall25.jpg
+exec --no-startup-id feh --bg-fill $HOME/Pictures/walls/peakpx.jpg
 
 # TAP TO CLICK
 exec --no-startup-id xinput set-prop "SYNA7DB5:00 06CB:7DB7 Touchpad" "libinput Tapping Enabled" 1
 
 # SCREENSHOOTER
-bindsym Print exec --no-startup-id xfce4-screenshooter -r
+bindsym Print exec --no-startup-id spectacle -r
+#bindsym Print exec --no-startup-id xfce4-screenshooter -r
 
 # GAPS and Margins -----------------------------------------------------------------------------------------------
 for_window [class="^.*"] border pixel 3 
