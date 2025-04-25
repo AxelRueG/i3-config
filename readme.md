@@ -47,7 +47,7 @@ Un atajo que me gusta usar es `alias ab="xdg-open"` para poder abrir archivos y 
 Lista de packetes a instalar.
 
 ~~~ bash
-sudo pacman -S python-pip git nodejs feh ttf-font-awesome powerline-fonts picom terminator rofi xorg-xinput xclip light base-devel vim neovim xclip lxappearance
+sudo pacman -S python-pip git nodejs feh ttf-font-awesome powerline-fonts picom terminator rofi xorg-xinput xclip brightnessctl base-devel vim neovim xclip lxappearance arandr 
 ~~~
 
 - feh _(aplicacion para asignar fondos de escritorios)_
